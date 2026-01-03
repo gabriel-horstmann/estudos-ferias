@@ -53,3 +53,5 @@ if(true){
     const y = undefined; //variavel indefinida
 
     console.log("Isso só existe na branch teste, mas com o merge aparecerá no main");
+
+    console.log("teste do git graph");
