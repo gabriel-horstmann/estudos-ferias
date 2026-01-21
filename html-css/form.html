@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Alessandro Horstmann">
+    <meta name="description" content="Estudo sobre formulários e inputs HTML">
+    <title>Formulários e Inputs</title>
+    <link rel="stylesheet" href="style_form.css">
+</head>
+
+<body>
+    <h2>Definição de Formulários</h2>
+        <ol>
+            <li>Formulários são elementos que permitem o usuário enviar dados para o Servidor</li>
+            <li>Usados em várias aplicações, como login, registro, pesquisas e compras online</li>
+        </ol>
+        
+    <h2>Estrutura básica de um formulário</h2>
+        <ol>
+            <li>Um formulário é criado com a tag form que envolve os elementos de entrada </li>
+            <li>Atributos importantes incluem action (URL para onde os dados serão enviados) e method (tipo de envio, como GET ou POST)</li>
+        </ol>
+
+    <h2>Importância da validação</h2>
+        <ol>
+            <li>A validação garante que os dados enviados estejam corretos e seguros</li>
+            <li>Pode ser realizada tanto no lado do cliente (JavaScript) quanto no lado do servidor</li>
+        </ol>
+
+    <h2>Tipos de INPUTS:</h2>
+        <ol>
+            <li>text - entradas de texto</li>
+            <li>password - senhas</li>
+            <li>email - endereço de email</li>
+            <li>checkbox e radio - seleções multiplas</li>
+            <li>file - upload de arquivos</li>
+        </ol>
+
+    <h2>Atributos Comuns de Inputs</h2>
+        <ol>
+            <li>name: identifica o input ao enviar os dados</li>
+            <li>placeholder: fornece uma dica sobre o que inserir</li>
+            <li>required: torna o preenchimento do campo obrigatório</li>
+            <li>value: define um valor padrão para o input</li>
+        </ol>
+
+    <h2>Rótulos e Acessibilidade</h2>
+        <ol>
+            <li>a tag label associa um rotulo a um input, melhorando a acessibilidade</li>
+            <li>Utilizar rótulos ajuda na usabilidade, tornando os formulários mais fáceis de entender e usar</li>
+        </ol>
+
+    <!-- Criar o formulário-->
+    <!-- action => para onde os dados vão -->
+    <!-- method => como o form vai ser enviado -->
+    <form action="/registro" method="POST">
+        <!-- Inputs = entradas -->
+        <label for="nome">Nome:</label> <!-- o artibuto for linka com o atributo name do input-->
+        <input type="text" name="nome" required placeholder="Digite o seu primeiro nome"> <!-- o atributo required traz a obrigatoriedade de preencher o campo -->
+        
+        <label for="email">E-mail</label> 
+        <input type="email" name="email" required placeholder="Digite o seu e-mail">  <!-- o atributo email traz a obrigatoriedade de ter um @ no campo -->
+        
+        <label for="senha">Senha:</label> 
+        <input type="password" name="senha" required placeholder="Digite sua senha">  <!-- o atributo email traz a obrigatoriedade de ter um @ no campo -->
+
+        <!-- texto longo - textarea -->
+         <label for="mensagem">Observações</label>
+         <textarea name="mensagem" placeholder="Deixe sua observação aqui"></textarea>
+
+        <h2>Preferências</h2>
+        <p>Genêro:</p>
+
+        <input type="radio" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label>
+        
+        <input type="radio" name="genero" value="Feminino">
+        <label for="feminino">Feminino</label>
+        
+        <input type="radio" name="genero" value="Outro">
+        <label for="outro">Outro</label> <!-- por eles terem o mesmo name, so é possivel selecionar um-->
+
+        <!--podendo selecionar mais de 1 opção utiliza-se o checkbox-->
+        <p>Interesses:</p>
+
+        <input type="checkbox" name="interesses" value="viagem">
+        <label for="viagem">Viagem</label>
+        
+        <input type="checkbox" name="interesses" value="esportes">
+        <label for="esportes">Esportes</label>
+        
+        <input type="checkbox" name="interesses" value="carros">
+        <label for="carros">Carros</label>
+
+        <!-- Caixa de Opções -->
+         <label for="cidade">Cidade:</label>
+         <select name="cidade">
+            <option value="">Selecione sua cidade</option>
+            <option value="Balneário Camboriú">Balneário Camboriú</option>
+            <option value="Itajaí">Itajaí</option>
+            <option value="Itapema">Itapema</option>
+         </select>
+
+         <!--Input do tipo data -->
+         <label for="data_nascimento">Data de Nascimento:</label>
+         <input type="date" name="data_nascimento">
+
+         <!-- Input do tipo horário-->
+         <label for="horário">Selecione um horário</label>
+         <input type="time" name="horário">
+
+         <!-- Input de cores -->
+         <label for="cor">Selecione uma cor</label>
+         <input type="color" name="cor">
+
+         <!-- Input para enviar arquivos -->
+         <div>
+            <input type="file" name="arquivo" accept=".pdf, .png, .jpg">
+         </div>
+
+         <div>
+            <input type="file" name="arquivo" accept=".pdf, .png, .jpg" multiple> <!-- o elemento multiple permite envio de mais de um arquivo-->
+         </div>
+
+        <!-- botão = submit-->
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar Formulário</button>
+    </form>
+</body>
+
+</html>
