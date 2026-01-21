@@ -1,0 +1,53 @@
+<!--Estudo sobre tabelas em HTML-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style_table.css">
+        <title>Estudo sobre tabelas</title>
+    </head>
+    <body>
+        <h1>Tabelas</h1>
+
+        
+        <table>
+            <caption>Teste de Tabela utilizando o MDN</caption>
+            <thead> <!--Encapsula uma série de TR - linhas, indicando que formam o Header da tabela-->
+                <tr> <!--tr = table row - linha-->
+                    <th scope="col">Nome</th> <!--th = table head - cabeçalho-->
+                    <th scope="col">E-Mail</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Idade</th>
+                </tr>
+            </thead>
+
+            <tbody> <!--Encapsula uma série de TR - linhas, indicando que formam o main da tabela-->
+                <tr>
+                    <th scope="row">Gabriel</th> <!--célula cabeçalho, o que define exatamente sua função é o que está dentro do scope-->
+                    <td>gabriel.ale.horstmann@gmail.com</td> <!--td = table data - dado de uma tabela-->
+                    <td>+55 (47) 99707-4794</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th scope="row">Leandro</th>
+                    <td>leandro@gmail.com</td>
+                    <td>+55 (47) 99999-1111</td>
+                    <td>39</td>
+                </tr>
+                <tr>
+                    <th scope="row">Lucas</th>
+                    <td>lucas@gmail.com</td>
+                    <td>+55 (47) 98888-1111</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+
+            <tfoot> <!--Encapsula uma série de TR - linhas, indicando que fazem parte do rodapé-->
+                <th scope="row" colspan="3">Idade Média</th> <!--colspan: ocupa o espaço de N colunas-->
+                <td>28</td>
+            </tfoot>
+        </table>    
+    
+    </body>
+</html>
