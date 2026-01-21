@@ -1,0 +1,88 @@
+<!--HTML Semântico: Uso de elementos que possuem significado claro sobre o conteudo envolvido-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="estudo sobre HTML semântico"> 
+        <meta name="author" content="Gabriel Alessandro Horstmann">
+        <title>Estudo sobre HTML semântico</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <!--Header: Cabeçalho-->
+        <header>
+            <h1>Aprendendo HTML Semântico</h1>
+            <nav> <!--barra de navegação-->
+                <ul>
+                    <li>
+                        <a href="#">Introdução</a>
+                    </li>
+                    <li>
+                        <a href="#">Benefícios</a>
+                    </li>
+                    <li>
+                        <a href="#">Conteúdos</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--conteúdo principal-->
+        <main id="main-content">
+            <!-- áreas = seções -->
+             <section id="introduction">
+                <h2>O que é o HTML Semântico?</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias modi a iste eius consequatur, cumque quos explicabo aliquam non id.
+                </p>
+             </section>
+
+             <!--article = chamada para artigo, blog, posts etc-->
+             <article id="benefits">
+                <h2>Benefícios do HTML Semântico</h2>
+                <p>Usar HTML Semântico traz Benefícios ao usuário e ao desenvolvedor</p>
+                <a href="#">Ler Conteúdo</a>
+             </article>
+
+             <section>
+                <h3>Exemplos de uso do HTML Semântico</h3>
+                <ul>
+                    <li>Exemplo 1</li>
+                    <li>Exemplo 2</li>
+                    <li>Exemplo 3</li>
+                </ul>
+             </section>
+
+             <!--aside: pode ou nao ter a ver com o conteudo principal-->
+             <aside id="extra">
+                <h4>Curiosidade</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nihil quibusdam animi eligendi doloremque ea, voluptatibus sed ipsam consequuntur. Odit at ullam optio rerum harum quam molestiae repellendus cupiditate. Vel?
+                </p>
+             </aside>
+
+             <!--Figure: coisas visuais, imagens, graficos e etc-->
+             <figure>
+                <img src="https://placehold.co/400x200" alt="imagem aleatoria">
+                <figcaption>Explicando a imagem...</figcaption> <!--explica a imagem-->
+             </figure>
+
+             <!--details: detalhe sobre um conteudo, abre o p, nao vem aberto na pagina visual-->
+             <details>
+                <summary>O que é o HTML Semântico?</summary>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde magnam ipsa voluptas, odit ab ipsam praesentium pariatur tenetur, porro autem ullam consequatur dolorem facilis molestias aliquid suscipit! Quae, reprehenderit voluptatum?</p>
+             </details>
+        </main>
+
+        <!--footer: cabeçalho do site, após a tag main-->
+        <footer id="conclusion">
+                <p>Gabriel Alessandro Horstmann</p>
+        </footer>
+    </body>
+
+</html>
