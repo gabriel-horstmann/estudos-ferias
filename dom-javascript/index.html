@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introdução ao DOM">
+    <title>DOM - Intro</title>
+</head>
+
+<body>
+    <h1 id="title1">Introdução ao DOM</h1>
+
+    <main class="cmain" id="idmain">
+        <h2>Subtítulo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, minus.</p>
+    </main>
+
+    <section class="csection" id="idsection">
+        <h3>Subtítulo</h3>
+        <p class="paragrafo2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, quidem?</p>
+        <p class="paragrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, natus!</p>
+    </section>
+
+    <section class="conteudo">
+        <h2>O que é o DOM?</h2>
+        <p style="font-size: 18px;">DOM - Document Object Model: Interface de programação que representa uma página HTML como uma árvore de objetos, permitindo o JavaScript acessar e manipular dinamicamente o conteúdo, estruturas e estilo da página</p>
+
+        <h2>document.getElementById("")</h2>
+        <p>Seleciona objetos com a id que estiver entre o parenteses e os hifens do seletor</p>
+
+        <h2>document.getElementsByClassName</h2>
+        <p>Seleciona um ou mais objetos que possuem aquela classe como nome. Não modifica os objetos por si só, tem que selecionar o objeto específico para manipulação como se fosse um array, utilizando chaves []</p>
+
+        <h2>document.querySelectorAll("")</h2>
+        <p>Seleciona através de uma passagem como se escreve classe no CSS, utilizando .nomedaclasse; Para selecionar especificamente a classe é necessário nomear como array, utilizando chaves []</p>
+
+        <h2>document.querySelector("")</h2>
+        <p>Seleciona como o selector all, porem sem a necessidade de passar o elemento com chaves</p>
+    </section>
+    
+</body>
+
+</html>
