@@ -3,7 +3,7 @@ Seção de estudo sobre esse evento do JavaScript
 Estudo feito do canal Coding2GO*/
 
 const button = document.getElementById('my-button') /*Armazena o botao do HTML na constante button*/
-const button2 = document.getElementById('button-console');
+const button2 = document.getElementById('button-console'); 
 
 /* addEventListener("evento", funcao) */
 button.addEventListener("click", function doSomething() { //posso passar a função direto ou nomear e passar a função depois, como no exemplo abaixo
